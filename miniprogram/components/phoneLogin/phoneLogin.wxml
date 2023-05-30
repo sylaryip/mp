@@ -1,0 +1,9 @@
+<!-- components/phoneLogin/phoneLogin.wxml -->
+<view class="container {{open ? 'open' : ''}}">
+    <view class="slot {{open ? 'close' : 'open'}}" style="visibility: {{open ? 'hidden' : 'visible'}}">
+        <slot name="close"></slot>
+    </view>
+    <view class="slot {{open ? 'open' : 'close'}}" style="visibility: {{open ? 'visible' : 'hidden'}}">
+        <slot name="open"></slot>
+    </view>
+</view>

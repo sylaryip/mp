@@ -1,0 +1,8 @@
+/* components/countdown/countdown.wxss */
+.container {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  font-size: 30rpx;
+  color: #555;
+}

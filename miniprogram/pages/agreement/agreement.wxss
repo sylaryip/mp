@@ -1,0 +1,21 @@
+/* pages/agreement/agreement.wxss */
+.agreement {
+  height: 100%;
+  padding-bottom: 300rpx; 
+}
+
+.content{
+  padding: 0 40rpx;
+}
+
+.title {
+  text-align: center;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.h1 {
+  text-align: left;
+  font-size: 14pt;
+  margin: 30rpx 20rpx 10rpx;
+}

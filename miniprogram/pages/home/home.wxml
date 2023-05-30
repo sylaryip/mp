@@ -1,0 +1,17 @@
+<!-- pages/home/home.wxml -->
+<view class="container">
+    <view class="controller">
+        <view hidden="{{status !== 0}}">
+            <picker bindchange="bindDifficultyChange" value="{{difficulty}}" range="{{difficultyArray}}">
+                <view class="picker">当前难度：{{difficultyArray[difficulty]}}</view>
+            </picker>
+        </view>
+        <view hidden="{{status !== 1}}">时间：{{time}}秒</view>
+        <view hidden="{{status !== 1}}" bind:tap="handleRestart">重新开始</view>
+    </view>
+    <view class="game-container target{{target}}">
+        <view class="item" wx:for="{{elements}}" wx:for-index="idx" wx:for-item="el" wx:key="el" bind:tap="onTouchItem" data-el="{{el}}">
+            {{el}}
+        </view>
+    </view>
+</view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/home/home",
+    "pages/agreement/agreement",
+    "pages/list/list",
+    "pages/partner/partner",
+    "pages/more/more"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ff9900",
+    "navigationBarTitleText": "舒尔特方格",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#ff9900",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "assets/home.png",
+        "selectedIconPath": "assets/home.png",
+        "text": "舒尔特"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "活动"
+      },
+      {
+        "pagePath": "pages/partner/partner",
+        "text": "伙伴"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

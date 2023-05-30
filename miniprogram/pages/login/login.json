@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "countdown": "../../components/countdown/countdown",
+    "phone-login": "../../components/phoneLogin/phoneLogin"
+  },
+  "backgroundColor": "#fff",
+  "disableScroll": true
+}

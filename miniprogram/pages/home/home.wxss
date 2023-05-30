@@ -1,0 +1,45 @@
+/* pages/home/home.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.controller {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rpx;
+  padding: 0 50rpx 30rpx 50rpx;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.game-container {
+  display: grid;
+  justify-content: center;
+  margin: 15rpx;
+}
+.game-container.target25 {
+  grid-template-columns: repeat(5, calc(650rpx / 5));
+  grid-template-rows: repeat(5, calc(650rpx / 5));
+}
+.game-container.target16 {
+  grid-template-columns: repeat(4, calc(650rpx / 4));
+  grid-template-rows: repeat(4, calc(650rpx / 4));
+}
+.game-container.target9 {
+  grid-template-columns: repeat(3, calc(650rpx / 3));
+  grid-template-rows: repeat(3, calc(650rpx / 3));
+}
+
+.game-container .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rpx;
+  border: 1rpx solid #eee;
+  font-size: 70rpx;
+}

@@ -1,0 +1,45 @@
+<!-- pages/login/login.wxml -->
+<view class="container">
+  <image class="logo" mode="aspectFill" src="/assets/logo.png" />
+  <phone-login open="{{isOpenPhoneLogin}}">
+    <view slot="close">
+      <view class="login__button phone_login2" bind:tap="showPhoneLogin">手机登录</view>
+    </view>
+    <view slot="open">
+      <view class="phone_login__form">
+        <view class="phone_login__form__item">
+          <label for="phoneNumber">手机号码</label>
+          <input id="phoneNumber" type="number" maxlength="11"></input>
+        </view>
+        <view class="phone_login__form__item">
+          <label for="verifyCode">验 证 码</label>
+          <view style="display:flex; position: relative;">
+            <input id="verifyCode" type="number" maxlength="4"></input>
+            <countdown id="countdown" />
+          </view>
+        </view>
+        <view class="login__button phone_login" bind:tap="handlePhoneLogin">登录</view>
+      </view>
+    </view>
+  </phone-login>
+  <!-- <view wx:if="{{isOpenPhoneLogin}}" class="phone_login__form {{isOpenPhoneLogin ? 'open' : ''}}">
+    <view class="phone_login__form__item">
+      <label for="phoneNumber">手机号码</label>
+      <input id="phoneNumber" type="number" maxlength="11"></input>
+    </view>
+    <view class="phone_login__form__item">
+      <label for="verifyCode">验 证 码</label>
+      <view style="display:flex; position: relative;">
+        <input id="verifyCode" type="number" maxlength="4"></input>
+        <countdown id="countdown" />
+      </view>
+    </view>
+    <view class="login__button phone_login" bind:tap="handlePhoneLogin">登录</view>
+  </view>
+  <view wx:else class="login__button phone_login " bind:tap="showPhoneLogin">手机登录</view> -->
+  <view class="login__button wx_login" bind:tap="handleWeChatLogin">微信登录</view>
+  <view class="agreement">
+    登录表示同意
+    <view class="hls" bind:tap="handleShowAgreement">使用协议/隐私协议</view>
+  </view>
+</view>

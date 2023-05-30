@@ -1,0 +1,4 @@
+<!-- components/countdown/countdown.wxml -->
+<view class="container" bind:tap="handleFetchVerifyCode">
+  {{value > 0 ?  value +'s' : '获取验证码'}}
+</view>

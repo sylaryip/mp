@@ -1,0 +1,30 @@
+/* components/phoneLogin/phoneLogin.wxss */
+.container {
+  position: relative;
+  border: 1rpx solid #ff9900;
+  border-radius: 10rpx;
+  width: 690rpx;
+  height: 100rpx;
+  transition: height 0.3s ease-in-out;
+}
+
+.container.open {
+  height: 470rpx;
+}
+
+.slot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.slot.open {
+  opacity: 1;
+}
+.slot.close {
+  opacity: 0;
+}
