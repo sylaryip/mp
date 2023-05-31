@@ -1,7 +1,8 @@
 {
   "pages": [
-    "pages/login/login",
     "pages/home/home",
+    "pages/login/login",
+  
     "pages/agreement/agreement",
     "pages/list/list",
     "pages/partner/partner",
@@ -26,15 +27,11 @@
       },
       {
         "pagePath": "pages/list/list",
-        "text": "活动"
-      },
-      {
-        "pagePath": "pages/partner/partner",
-        "text": "伙伴"
+        "text": "评论"
       },
       {
         "pagePath": "pages/more/more",
-        "text": "更多"
+        "text": "时间"
       }
     ]
   },

@@ -1,2 +1,4 @@
 <!-- pages/more/more.wxml -->
-<text>pages/more/more.wxml</text>
+<view style="height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;"> 
+  <canvas type="2d" id="myCanvas" style="width: 650rpx; height: 650rpx; background-color: white;"></canvas>
+</view>

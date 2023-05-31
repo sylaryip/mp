@@ -43,3 +43,7 @@
   border: 1rpx solid #eee;
   font-size: 70rpx;
 }
+
+.game-container .item-hover {
+  color: #ff9900;
+}

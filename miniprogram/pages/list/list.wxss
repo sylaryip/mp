@@ -1,1 +1,67 @@
 /* pages/home/home.wxss */
+.title {
+  text-align: center;
+  padding: 50rpx;
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 30rpx 5rpx rgba(0, 0, 0, 0.2);
+}
+.out {
+  display: flex;
+  flex-direction: column;
+  margin: 50rpx 30rpx;
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 30rpx 5rpx rgba(0, 0, 0, 0.2);
+  border-radius: 15rpx;
+  padding: 15rpx;
+}
+
+.out .list {
+  max-height: 600rpx;
+  overflow: auto;
+}
+
+.out .list .row {
+  display: flex;
+  padding: 30rpx 0;
+  align-items: center;
+  font-size: 22px;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+.out .list .row .text {
+  flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.out .count {
+  margin-top: 35rpx;
+  height: 35rpx;
+  line-height: 35rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.out .comment {
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.out .comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.out .comment input {
+  flex: 4;
+  background-color: #f4f4f4;
+  margin-right: 10rpx;
+  border-radius: 8rpx;
+  padding: 32rpx;
+  height: 100%;
+}
+
+.out .comment button {
+  flex: 1;
+  padding: 20rpx 0;
+}

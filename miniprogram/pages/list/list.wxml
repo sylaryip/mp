@@ -1,2 +1,24 @@
 <!-- pages/list/list.wxml -->
-<text>pages/list/list.wxml</text>
+<view class="title">评论</view>
+<view class="out">
+    <block wx:if="{{!listArr.length}}">
+        <view class="empty">暂无评论</view>
+    </block>
+    <block wx:else>
+        <view class="list">
+            <view class="row" wx:for="{{listArr}}" wx:key="id">
+                <view class="text">{{index+1}}. {{item.title}}</view>
+                <view class="close" bindtap="clickClose" data-index="{{index}}">
+                    <icon type="clear" size="26" />
+                </view>
+            </view>
+        </view>
+        <view class="count">共{{listArr.length}}条评论</view>
+    </block>
+    <view class="comment">
+        <input placeholder="说点什么吧" model:value="{{inputValue}}" bindconfirm="onSubmit" />
+        <button type="primary" size="mini" disabled="{{!inputValue.length}}" bindtap="onSubmit">
+            发布
+        </button>
+    </view>
+</view>
