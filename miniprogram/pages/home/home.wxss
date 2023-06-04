@@ -6,6 +6,7 @@
   align-items: center;
   height: 100vh;
 }
+
 .controller {
   display: flex;
   flex-direction: row;
@@ -19,17 +20,21 @@
 
 .game-container {
   display: grid;
+  position: relative;
   justify-content: center;
   margin: 15rpx;
 }
+
 .game-container.target25 {
   grid-template-columns: repeat(5, calc(650rpx / 5));
   grid-template-rows: repeat(5, calc(650rpx / 5));
 }
+
 .game-container.target16 {
   grid-template-columns: repeat(4, calc(650rpx / 4));
   grid-template-rows: repeat(4, calc(650rpx / 4));
 }
+
 .game-container.target9 {
   grid-template-columns: repeat(3, calc(650rpx / 3));
   grid-template-rows: repeat(3, calc(650rpx / 3));
@@ -44,6 +49,23 @@
   font-size: 70rpx;
 }
 
-.game-container .item-hover {
+.game-container .item.active {
+  background: #ff9900;
+}
+
+.game-container .item-hover.inactive {
   color: #ff9900;
+}
+
+.game-container .intro {
+  position: absolute;
+  padding: 50rpx;
+  border-radius: 35rpx;
+  font-size: 48rpx;
+  box-sizing: border-box;
+  height: 650rpx;
+  width: 650rpx;
+  background: #000;
+  color: #fff;
+  overflow-y: auto;
 }

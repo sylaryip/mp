@@ -10,7 +10,13 @@
         <view hidden="{{status !== 1}}" bind:tap="handleRestart">重新开始</view>
     </view>
     <view class="game-container target{{target}}">
-        <view class="item" wx:for="{{elements}}" wx:for-index="idx" wx:for-item="el" wx:key="el" bind:tap="onTouchItem" data-el="{{el}}" hover-class="item-hover">
+        <view class="intro" hidden="{{isStart}}" bindtap="handleStartGame">
+        <text>游戏规则:</text>
+        <view>将1~{{elements.length}}的数字顺序打乱，然后以最快的速度按照从1数到{{elements.length}}的顺序点出，正确点击完成后挑战成功。</view>
+        <view style="position: absolute; bottom: 30rpx; text-align: center; box-sizing: border-box; width: 550rpx">点击开始
+        </view>
+        </view>
+        <view class="item {{el < currentExpressionElement? 'active' : ''}}" wx:for="{{elements}}" wx:for-index="idx" wx:for-item="el" wx:key="el" bind:tap="onTouchItem" data-el="{{el}}" hover-class="item-hover">
             {{el}}
         </view>
     </view>
