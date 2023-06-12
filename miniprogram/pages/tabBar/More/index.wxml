@@ -1,0 +1,17 @@
+<!--pages/tabBar/More/index.wxml-->
+
+<view class="index-hd">
+    <view class="index-desc">更多的功能</view>
+</view>
+<view class="index-bd">
+    <view class="kind-list">
+      <view class="kind-list-item-bd kind-list-item-bd-show">
+        <view class="navigator-box  navigator-box-show">
+          <navigator class="navigator" url="/page/subpack1/pages/more/more">         
+            <view class="navigator-text">进入时间</view>
+            <view class="navigator-arrow"></view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+</view>

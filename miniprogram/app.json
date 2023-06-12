@@ -2,11 +2,11 @@
   "pages": [
     "pages/home/home",
     "pages/login/login",
+    "pages/tabBar/More/index",
   
     "pages/agreement/agreement",
     "pages/list/list",
-    "pages/partner/partner",
-    "pages/more/more"
+    "pages/partner/partner"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -30,11 +30,19 @@
         "text": "评论"
       },
       {
-        "pagePath": "pages/more/more",
-        "text": "时间"
+        "pagePath": "pages/tabBar/More/index",
+        "text": "更多"
       }
     ]
   },
+  "subPackages": [
+    {
+      "root": "page/subpack1/",
+      "pages": [
+        "pages/more/more"
+      ]
+    }
+  ], 
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
